@@ -1,31 +1,38 @@
-import React from "react";
-import { Link, Route } from "react-router-dom";
-import Learn from "./Learn";
+import React, { Component } from 'react';
 
-function Contact(props) {
-  return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
-        Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
-        pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
-        tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec
-        metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula.
-        Nam tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora
-        torquent per conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
-        Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-      <Link to={`${props.match.url}/learn`} role="button" className="btn btn-link">
-        Learn More
-      </Link>{" "}
-      <Link to="/contact" role="button" className="btn btn-link">
-        Learn Less
-      </Link>
-      <Route exact path={`${props.match.url}/learn`} component={Learn} />
-    </div>
+  export default class ContactUs extends Component {
+    
+    render() {
+      let resumeData = this.props.resumeData;
+      
+      return (
+        
+        <section id = 'contact'>
+          
+          <div className = 'row section-head'>
+            <div className = 'ten columns'>
+
+              <p className = 'lead'>
+
+                Feel free to contact me for any work or suggestions below
+              </p>
+
+            </div>
+          </div>
+
+          <div className = 'row'>
+            <aside className = 'eigth columns footer-widgets'>
+                
+              <div className = 'widget'>
+                
+                <h4>Linked in :
+                    
+                    {resumeData.linkedinId}
+                </h4>
+              </div>
+            </aside>
+
+          </div>
+    </section>
   );
-}
-
-export default Contact;
+}}
