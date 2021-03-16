@@ -1,18 +1,47 @@
-import React from "react";
+import React, { Component } from 'react';
 
-function About() {
-  return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui
-        mauris, ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus
-        porta. Nam quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam
-        semper imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed
-        rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
-  );
-}
+export default class About extends Component {
 
-export default About;
+  render() {
+    let resumeData = this.props.resumeData;
+
+      return(
+        
+      <section id = 'about'>
+        <div className = 'row'>
+        <div className = 'three columns'>
+        <img className = 'profile-pic' src='images/profile.jpg” alt="" />
+        </div>
+
+        <div className = "three columns">
+        <img className = ”profile-pic” src=”images/profile.jpg” alt=”” />
+        </div>
+
+        <div className=”nine columns main-col”>
+          <h2> About Me </h2>
+            <p> 
+            { 
+              resumeDate.aboutme
+            }
+            </p>
+
+        <div className = "row">
+            <h2> Contact Details </h2>
+              <p className = "address">
+
+              <span> {resumeData.name} </span>
+
+        <br></br>
+
+              <span> {resumeData.website} </span>
+
+              </p>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+      </section> 
+        );
+      }
+  }
