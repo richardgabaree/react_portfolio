@@ -1,47 +1,37 @@
-import React, { Component } from 'react';
+import React from "react";
 
-export default class About extends Component {
+const About = () => (
+  <div>
+    <h1>Who am I?</h1>
+    <p>
+      I am a conscious leader professional with over 20 years of experience in
+      sales, retail and wholesale. marketing, print production, finance, and
+      customer care. Manage multiple short and long-term projects with a
+      cross-functional team in a fast-paced environment.
+    </p>
 
-  render() {
-    let resumeData = this.props.resumeData;
+    <p>
+      I have an established work history in leadership in marketing with a focus
+      on the customer experience. I am looking for a Full-Stack Developer
+      position where I can utilize my experience with clients to build a
+      stronger and more user-forward experience with clients. I also have worked
+      in the sales and financial industry, so I have a well-rounded background
+      to build upon. I’m self-driven and am used to working in a team
+      environment as well as independently.
+    </p>
 
-      return(
-        
-      <section id = 'about'>
-        <div className = 'row'>
-        <div className = 'three columns'>
-        <img className = 'profile-pic' src='images/profile.jpg” alt="" />
-        </div>
+    <p>
+      A consumer-minded expert in teamwork, communication, and multi-tasking
+      with an aptitude for Microsoft Office, SharePoint, MerchLogix, social
+      networking platforms, and basic Photoshop, Illustrator, and InDesign
+      skills.
+    </p>
 
-        <div className = "three columns">
-        <img className = ”profile-pic” src=”images/profile.jpg” alt=”” />
-        </div>
+    <p>
+      Passions include local wine and food, animal compassion and taking care of
+      the environment.
+    </p>
+  </div>
+);
 
-        <div className=”nine columns main-col”>
-          <h2> About Me </h2>
-            <p> 
-            { 
-              resumeDate.aboutme
-            }
-            </p>
-
-        <div className = "row">
-            <h2> Contact Details </h2>
-              <p className = "address">
-
-              <span> {resumeData.name} </span>
-
-        <br></br>
-
-              <span> {resumeData.website} </span>
-
-              </p>
-        
-        </div>
-        </div>
-        </div>
-        </div>
-      </section> 
-        );
-      }
-  }
+export default About;
