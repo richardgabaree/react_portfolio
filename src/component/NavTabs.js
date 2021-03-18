@@ -1,6 +1,4 @@
 import React from "react";
-import ResumeImg from "../images/RichardGabareeResume.pdf";
-
 
 function NavTabs(props) {
   return (
@@ -25,11 +23,11 @@ function NavTabs(props) {
       </li>
       <li className="nav-item">
         <a
-          href={ResumeImg} target="_blank" rel="noreferrer"
-          // onClick={() => props.handlePageChange("Resume")}
+          href="#resume"
+          onClick={() => props.handlePageChange("Resume")}
           className={props.currentPage === "Resume" ? "nav-link active" : "nav-link"}
         >
-          Resume
+          Blog
         </a>
       </li>
       <li className="nav-item">
@@ -39,15 +37,6 @@ function NavTabs(props) {
           className={props.currentPage === "Contact" ? "nav-link active" : "nav-link"}
         >
           Contact
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#portfolio"
-          onClick={() => props.handlePageChange("Portfolio")}
-          className={props.currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
-        >
-          Portfolio
         </a>
       </li>
     </ul>

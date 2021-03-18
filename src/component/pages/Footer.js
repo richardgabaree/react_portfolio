@@ -16,11 +16,17 @@ export default class Footer extends Component {
                                 resumeData.socialLinks && resumeData.socialLinks.map((item) => { 
 
                                     return (
-                                        <li>
-                                            <a href = {item.url}>
-                                                <i className =  {item.className} />
-                                            </a>
-                                        </li>
+                                        <figure>
+                        <a href="https://github.com/richardgabaree" target="_blank"><img src={Git} alt="link to Richard's GitHub page" />
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/richard-gabaree-2ba0bb1b/" 
+                        target="_blank">
+                          <img src={Linkedin} />
+
+                        </a>
+
+                    </figure>
                                     )
                                 })
                             }

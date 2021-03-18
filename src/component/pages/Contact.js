@@ -1,8 +1,8 @@
 import React from "react";
-import Git from "../../images/github_128_black.png"
-import Linkedin from "../../images/linkedInicon-128.png"
+
 const Contact = () => (
   <div>
+
     <main className="container">
             <header className="row">
                 <div className="col-md-8">
@@ -62,6 +62,14 @@ const Contact = () => (
             </div>
         </section>
     </main>
+=======
+=======
+
+    <h1>Contact Page</h1>
+    <p>
+      
+    </p>
+
   </div>
 );
 

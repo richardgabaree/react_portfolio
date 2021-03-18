@@ -3,21 +3,16 @@ import React from "react";
 
 const Home = () => (
     <div>
-    
-        <div>
+      
+      <embed src="./RichardGabareeResume.pdf" 
+         width="640" 
+         height="480" 
+         // style="width: -webkit-fill-available;
+         // height: -webkit-fill-available;"
+         >
+      </embed>
 
-
-    </div>
-        <main className="container">
-            <header className="row">
-                <div className="col-md-12">
-                <h2>Richard Gabaree</h2>
-                </div>
-            </header>
-
-            <h3> Full-Stack Developer - Marketing - Entrepreneur </h3>
-        </main>
-    </div>
+   </div>
 
 );
 

@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import NavTabs from "./NavTabs";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+
 
 class PortfolioContainer extends Component {
   state = {
@@ -17,12 +19,18 @@ class PortfolioContainer extends Component {
   renderPage = () => {
     if (this.state.currentPage === "Home") {
       return <Home />;
-    } else if (this.state.currentPage === "About") {
+    } 
+    else if (this.state.currentPage === "About") {
       return <About />;
-    } else if (this.state.currentPage === "Contact") {
+    } 
+    else if (this.state.currentPage === "Contact") {
       return <Contact />;
-    } else {return <Portfolio/>}
-      
+    } 
+    else if (this.state.currentPage === "Resume") {
+      return <Resume />;
+    }else {
+      return <Portfolio />;
+    }
   };
 
   render() {
