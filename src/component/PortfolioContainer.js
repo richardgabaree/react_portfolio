@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import Style from "./app.css"
 
 
 class PortfolioContainer extends Component {
