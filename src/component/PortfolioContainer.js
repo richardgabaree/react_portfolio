@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import NavTabs from "./NavTabs";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+<<<<<<< HEAD
 import Portfolio from "./pages/Portfolio";
 // import Footer from ".pages/Footer";
+=======
+>>>>>>> parent of 6358c4a... fixed the css and class names
 
-class PortfolioContainer extends Component {
+class Portfolio extends Component {
   state = {
     currentPage: "Home"
   };
@@ -20,10 +24,11 @@ class PortfolioContainer extends Component {
       return <Home />;
     } else if (this.state.currentPage === "About") {
       return <About />;
-    } else if (this.state.currentPage === "Contact") {
+    } else if (this.state.currentPage === "Blog") {
+      return <Blog />;
+    } else {
       return <Contact />;
-    } else {return <Portfolio/>}
-      
+    }
   };
 
   render() {
@@ -40,4 +45,4 @@ class PortfolioContainer extends Component {
   }
 }
 
-export default PortfolioContainer;
+export default Portfolio;
