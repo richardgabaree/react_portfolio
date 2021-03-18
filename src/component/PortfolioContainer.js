@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+// import Footer from ".pages/Footer";
 
 class PortfolioContainer extends Component {
   state = {
@@ -34,6 +35,7 @@ class PortfolioContainer extends Component {
         />
         {this.renderPage()}
       </div>
+      
     );
   }
 }
