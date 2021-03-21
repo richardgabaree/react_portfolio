@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => (
   <div>
-    <h1>Who am I?</h1>
+    <h1>Richard Gabaree</h1>
     <p>
       I am a conscious leader professional with over 20 years of experience in
       sales, retail and wholesale. marketing, print production, finance, and

@@ -12,11 +12,9 @@ const Portfolio = () => (
     <main className="container">
             <header className="row">
                 <div className="col-md-12">
-                    <h2>Portfolio</h2>
+                    <h1>Portfolio</h1>
                 </div>
             </header>
-
-        {/* <br><br/> */}
         
         <section className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
@@ -76,10 +74,6 @@ const Portfolio = () => (
         </section>
     </main>
 </div>
-            
-                        
-                
-   
 
 );
 

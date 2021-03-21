@@ -4,13 +4,8 @@ import React from "react";
 const Home = () => (
     <div>
       
-      <embed src="./RichardGabareeResume.pdf" 
-         width="640" 
-         height="480" 
-         // style="width: -webkit-fill-available;
-         // height: -webkit-fill-available;"
-         >
-      </embed>
+      <h1>Richard Gabaree</h1>
+      <h2>Marketer - Full-Stack Developer - Entrepeneur</h2>
 
    </div>
 

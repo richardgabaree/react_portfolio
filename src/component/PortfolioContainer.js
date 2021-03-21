@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import Style from "./app.css"
+
 
 
 class PortfolioContainer extends Component {
@@ -27,10 +27,11 @@ class PortfolioContainer extends Component {
     else if (this.state.currentPage === "Contact") {
       return <Contact />;
     } 
-    else if (this.state.currentPage === "Resume") {
-      return <Resume />;
-    }else {
+    else if (this.state.currentPage === "Portfolio") {
       return <Portfolio />;
+    }
+    else {
+      return <Resume />;
     }
   };
 
@@ -42,6 +43,7 @@ class PortfolioContainer extends Component {
           handlePageChange={this.handlePageChange}
         />
         {this.renderPage()}
+      <footer />
       </div>
     );
   }
