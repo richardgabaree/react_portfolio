@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
-
+import Projects from "./pages/Projects";
+// import Footer from ".pages/Footer";
 
 
 class PortfolioContainer extends Component {
@@ -27,12 +27,12 @@ class PortfolioContainer extends Component {
     else if (this.state.currentPage === "Contact") {
       return <Contact />;
     } 
-    else if (this.state.currentPage === "Portfolio") {
-      return <Portfolio />;
-    }
     else {
-      return <Resume />;
+      return <Projects />;
     }
+    // else {
+    //   return <Resume />;
+    // }
   };
 
   render() {
@@ -43,8 +43,9 @@ class PortfolioContainer extends Component {
           handlePageChange={this.handlePageChange}
         />
         {this.renderPage()}
-      <footer />
+    
       </div>
+      
     );
   }
 }

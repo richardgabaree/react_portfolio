@@ -24,6 +24,12 @@ const Contact = () => (
         </div>
       </section>
     </main>
+
+    <h1>Contact Page</h1>
+    <p>
+      
+    </p>
+
   </div>
 );
 

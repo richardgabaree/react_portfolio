@@ -1,4 +1,8 @@
-import React from "react";
-import Resume from "../../images/RichardGabareeResume.pdf"
+// import React from "react";
 
-export default Resume;
+
+// {/* <div>
+
+  
+// </div> */}
+// export default Resume;
