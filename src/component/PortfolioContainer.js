@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import NavTabs from "./NavTabs";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-// import Footer from ".pages/Footer";
+import Footer from ".pages/Footer";
 
 
 class PortfolioContainer extends Component {
@@ -30,9 +29,6 @@ class PortfolioContainer extends Component {
     else {
       return <Projects />;
     }
-    // else {
-    //   return <Resume />;
-    // }
   };
 
   render() {
@@ -42,10 +38,11 @@ class PortfolioContainer extends Component {
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
         />
+        <Footer />
         {this.renderPage()}
-    
+        
       </div>
-      
+    
     );
   }
 }

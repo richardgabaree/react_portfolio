@@ -1,42 +1,25 @@
-import React, { Component } from 'react';
+import React from "react";
+import Git from "../../images/github.png";
 
-export default class Footer extends Component {
+function Footer() {
+  return (
+    <section>
+            <div class="row">
+                <div class="col-md-8">
 
-    render() {
-
-        let resumeData = this.props.resumeData;
-
-        return (
-
-            <footer>
-                <div className = 'row'>
-                    <div className = 'twelve columns'>
-                        <ul className = 'social-links'>
-                            {
-                                resumeData.socialLinks && resumeData.socialLinks.map((item) => { 
-
-                                    return (
-                                        <figure>
-                        <a href="https://github.com/richardgabaree" target="_blank"><img src={Git} alt="link to Richard's GitHub page" />
-                        </a>
+                    <br></br> 
+                    <figure>
+                       
+                        <img src="./components/images/github.png" alt="link to Richard's GitHub page"></img> <a href="https://github.com/richardgabaree" target="_blank"></a>
                         
                         <a href="https://www.linkedin.com/in/richard-gabaree-2ba0bb1b/" 
-                        target="_blank">
-                          <img src={Linkedin} />
-
-                        </a>
+                        target="_blank"><img src="./components/images/linkedin.png"></img></a>
 
                     </figure>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
-
-                    <div id = 'go-top'><a className = 'smoothscroll' title = 'Back to Top' href = '#home'><i className = 'icon-up-open' /></a></div>
-
                 </div>
-            </footer>
-        )
-    }
-}
+            </div>
+        </section>
+    )
+  }
+
+export default Footer;

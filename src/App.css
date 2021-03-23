@@ -4,12 +4,12 @@
   margin: 0;
 }
 
-/* html {
+html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
+}
 
 #bio-image {
   width: 200px;
@@ -21,24 +21,23 @@
 body {
   background-image: url("./images/tim-mossholder-yB65Vk2UqEM-unsplash.jpg");
   background-size: cover;
-  font-family: 'Dancing Script', cursive;
-  /* font-family: 'Raleway', sans-serif; */
-  font-size: 20px;
   height: 100%;
   margin: 0;
   text-align: center;
   float: none;
 }
 
-.nav-bar {
+#nav-tab {
   color: rgb(249, 246, 246);
-}
-nav {
   background-color: #ffffff;
-  color: #000;
+}
+
+nav-item {
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: 100px;
   font-size: 2rem;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Raleway', sans-serif
 }
 
 li {
@@ -48,24 +47,32 @@ li {
   color: white;
 }
 
-h1, h2 {
-  padding: 25px;
+h1 {
+  padding: 50px;
   font-family: 'Dancing Script', cursive;
-  font-size: 5rem;
-  font-weight: 500px;
-  color: #333b52;
+  font-size: small;
+  /* font-weight: bold; */
+  color: rgb(59, 114, 155);
   text-align: center;
 }
 
-h3 {
+h2 {
   font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 p {
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  color: rgb(7, 0, 0);
-  text-align: left;
+  font-size: 20px;
+  color: rgb(253, 251, 251);
+  text-align: center;
   float: none;
 
 }

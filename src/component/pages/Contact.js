@@ -5,13 +5,16 @@ const Contact = () => (
     <main className="container">
       <header className="row">
         <div className="col-md-8">
-          <header>Contact</header>
+          
         </div>
       </header>
 
       <section>
         <div className="row">
           <div className="col-md-8">
+
+          <h1>Contact Page</h1>
+
             <h3>ADDRESS</h3>
             <h4>7430 Pusch Ridge Loop Austin, TX 78749</h4>
 
@@ -25,10 +28,7 @@ const Contact = () => (
       </section>
     </main>
 
-    <h1>Contact Page</h1>
-    <p>
-      
-    </p>
+   
 
   </div>
 );
