@@ -110,7 +110,7 @@ const Projects = () => (
                 about.
               </p>
               <a
-                href="https://gabaree-note-taker.herokuapp.com"
+                href=""
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-primary"
